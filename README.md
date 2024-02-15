@@ -2,7 +2,7 @@
 ## Software and Version
 Python 3.10<br />
 Django 4.2.9<br />
-MySQL 12.10<br />
+Postgres 12.10<br />
 React 18.2 <br />
 Docker version 24.0.2
 

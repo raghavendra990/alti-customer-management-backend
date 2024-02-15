@@ -7,7 +7,7 @@ React 18.2 <br />
 Docker version 24.0.2
 
 
-<b>React Frontend Repo </b>: https://github.com/raghavendra990/demo-web
+<b>React Frontend Repo </b>: [https://github.com/raghavendra990/demo-web](https://github.com/raghavendra990/alti-customer-management-frontend)
 
 # Project Structure:
 <pre> 

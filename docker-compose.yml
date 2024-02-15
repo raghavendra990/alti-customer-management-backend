@@ -1,0 +1,35 @@
+version: '1'
+
+services:
+  demo_postgres:
+    image: postgres:12.10
+    container_name: demo_postgres
+    environment:
+      POSTGRES_DB: user_collection
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: P@ssw0rd
+    networks:
+      - local
+    command: postgres -c max_prepared_transactions=8
+    ports:
+      - 5434:5432
+
+  web:
+    build: .
+    command:  >
+      /bin/bash -c "
+          python manage.py migrate;
+          python manage.py runserver 0.0.0.0:8000;
+      "
+    volumes:
+      - .:/code
+    networks:
+      - local
+    ports:
+      - "8000:8000"
+    depends_on:
+      - demo_postgres
+
+networks:
+  local:
+    name: demo_local

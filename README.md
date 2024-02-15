@@ -59,7 +59,9 @@ Backend is built using django rest framework and Postgres as backend DB.
 It majorly contain two apps details below:
 	
 <b>userauth</b>: It is used for authentication for the user with apis like Login, Register, Logout. I have used JWT custom authentication, code present at demo-backend/userauth/authentication.py .
-For detail API click on link below.
+
+###For detail API click on below POSTMAN collection.
+[backendServiceEndpoint.postman_collection.json](/backendServiceEndpoint.postman_collection.json)
 
 <b>For Logout</b>, the frontend application will just delete the jwt token from storage, but there is still a chance that token remains valid and the fraudster can miss use it. That is Why we have created a Table BlackListedToken where we will store the blacklisted tokens and we have created Custom Permission Class IsTokenValid present in authentication.py file in userauth app.
 

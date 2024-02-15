@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "66fc581b-64e4-4c8e-a2a3-4240702ca1a2",
+		"name": "backendServiceEndpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "655988"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"raghavyadav995@gmail.com\",\n    \"password\": \"raghav4321\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjIiLCJpZCI6ImI5YmU2MGY2LWJlMTgtMTFlZS04Y2VhLTFlYmMzNGQwMzdjZiJ9.OPv0UB6AVMWuVOwIrHEAecIgfpPrx2OeCDe2355LtzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/logout",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjIiLCJpZCI6ImI5YmU2MGY2LWJlMTgtMTFlZS04Y2VhLTFlYmMzNGQwMzdjZiJ9.OPv0UB6AVMWuVOwIrHEAecIgfpPrx2OeCDe2355LtzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upgradeDowngradePlan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjIiLCJpZCI6ImI5YmU2MGY2LWJlMTgtMTFlZS04Y2VhLTFlYmMzNGQwMzdjZiJ9.OPv0UB6AVMWuVOwIrHEAecIgfpPrx2OeCDe2355LtzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/upgradeDowngradePlan",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"upgradeDowngradePlan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjIiLCJpZCI6ImI5YmU2MGY2LWJlMTgtMTFlZS04Y2VhLTFlYmMzNGQwMzdjZiJ9.OPv0UB6AVMWuVOwIrHEAecIgfpPrx2OeCDe2355LtzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan renew",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjIiLCJpZCI6ImI5YmU2MGY2LWJlMTgtMTFlZS04Y2VhLTFlYmMzNGQwMzdjZiJ9.OPv0UB6AVMWuVOwIrHEAecIgfpPrx2OeCDe2355LtzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Summary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhZ2hhdjEiLCJpZCI6Ijg4MDZiY2QwLWJlNjctMTFlZS04MmNlLTFlYmMzNGQwMzdjZiIsImNyZWF0ZWRfYXQiOiIyMDI0LTAxLTI5IDA1OjMwOjQ3LjMwMTE5NSJ9.EW2RF9pfIo-94j6-KQjo58PHCmFRKt3xQcGrRhHFDBk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/backend/item/get_final_amount",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"item",
+						"get_final_amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"raghav1\",\n    \"email\": \"raghavyadav990@gmail.com\",\n    \"dob\": \"1992-08-07\",\n    \"phone_number\": \"+917987575008\",\n    \"password\": \"raghav4321\",\n    \"adhar_number\": \"123456789012\",\n    \"plan\": \"1a4a52e8-8689-4582-9ad6-3a7ac71bd4be\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/backend/userauth/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"backend",
+						"userauth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
